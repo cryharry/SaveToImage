@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="427.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootController">
+   <children>
+      <Button fx:id="folderBtn" mnemonicParsing="false" onAction="#chooseFolder" prefHeight="67.0" prefWidth="113.0" text="폴더 선택" />
+      <Button fx:id="saveBtn" layoutX="443.0" mnemonicParsing="false" onAction="#saveImg" prefHeight="67.0" prefWidth="113.0" text="서버로 전송" />
+      <TableView fx:id="imgTable" layoutX="1.0" layoutY="67.0" prefHeight="513.0" prefWidth="555.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="292.0" text="사진 파일 이름" />
+          <TableColumn fx:id="resultCol" prefWidth="262.0" text="결   과" />
+        </columns>
+      </TableView>
+      <Label fx:id="folderPath" layoutX="133.0" layoutY="18.0" prefHeight="34.0" prefWidth="291.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
